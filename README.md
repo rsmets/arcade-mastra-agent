@@ -1,6 +1,6 @@
 # Arcade Mastra Agent - Technical Assessment
 
-This repository demonstrates professional software development practices while leveraging the custom **Arcade AI toolkit** as [requested](Arcade\s Engineering\ Interview\ Project.pdf). The Found Audio custom toolkit is defined [here](https://github.com/rsmets/arcade-foundaudio-toolkit).
+This repository demonstrates professional software development practices while leveraging the custom **Arcade AI toolkit** as [requested](Arcade Engineering Interview Project.pdf). The Found Audio custom toolkit is defined [here](https://github.com/rsmets/arcade-foundaudio-toolkit).
 
 ## 🎯 Purpose
 
