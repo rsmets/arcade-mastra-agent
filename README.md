@@ -1,6 +1,6 @@
 # Arcade Mastra Agent - Technical Assessment
 
-This repository demonstrates professional software development practices while leveraging the custom **Arcade AI toolkit** as [requested](ArcadeEngineeringInterviewProject.pdf). The Found Audio custom toolkit is defined [here](https://github.com/rsmets/arcade-foundaudio-toolkit).
+This repository demonstrates professional software development practices while leveraging the custom **Arcade AI toolkit** as [requested](ArcadeEngineeringInterviewProject.pdf). The Found Audio custom toolkit is defined in the [found-audio-toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) repo.
 
 ## 🎯 Purpose
 
@@ -9,6 +9,10 @@ This project serves as a technical assessment showcase, demonstrating:
 - **Modern TypeScript Development**: Clean, type-safe code with proper project structure
 - **AI Agent Architecture**: Implementation of intelligent agents using Mastra framework with tool calling, workflow and memory capabilities
 - **Professional Workflows**: Industry-standard development practices (CI, linting) and tooling (GH actions, Trunk, pnpm)
+
+## Goal
+
+Leverage the custom Found Audio [toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) along with another Arcade [integration](https://docs.arcade.dev/toolkits) within a natural language interface that maintains memory. The aim was to have an agent that will suggest audio files to listen to based on the content of recently received emails.
 
 ## 🛠️ Tech Stack
 
