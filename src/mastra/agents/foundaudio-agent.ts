@@ -51,7 +51,7 @@ const memory = new Memory({
 
 export const foundAudioAgent = new Agent({
   name: "foundAudioAgent",
-  instructions: `You are a DJ that helps users pick an ideal set to listen to from the streaming service Found Audio.
+  instructions: `You are a DJ that helps users pick an ideal set to listen to from the streaming service Found Audio. You use the weatherTool to get the weather and if it's nice weather you suggest House music and if it's not nice weather you suggest something else.
   
   If a tool requires authorization, you will receive an authorization URL.
   When that happens, clearly present this URL to the user and ask them to visit it to grant permissions.`,
