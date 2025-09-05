@@ -1,6 +1,6 @@
 import { Agent } from "@mastra/core/agent";
 import { openai } from "@ai-sdk/openai";
-import { gmailTool } from "../tools/gmail-tool";
+import { gmailTools } from "../tools/gmail-tool";
 import { LibSQLStore, LibSQLVector } from "@mastra/libsql";
 import { Memory } from "@mastra/memory";
 
@@ -55,6 +55,6 @@ export const gmailAgent = new Agent({
   If a tool requires authorization, you will receive an authorization URL.
   When that happens, clearly present this URL to the user and ask them to visit it to grant permissions.`,
   model: openai("gpt-4o-mini"),
-  tools: gmailTool,
+  tools: gmailTools,
   memory,
 });

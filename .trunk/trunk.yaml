@@ -23,6 +23,7 @@ lint:
     - prettier@3.6.2
     - trufflehog@3.90.5
     - yamllint@1.37.1
+    - markdownlint@0.45.0
 actions:
   enabled:
     - trunk-announce
