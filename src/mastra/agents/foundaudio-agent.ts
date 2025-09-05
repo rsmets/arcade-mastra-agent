@@ -4,7 +4,7 @@ import { LibSQLStore, LibSQLVector } from "@mastra/libsql";
 import { Memory } from "@mastra/memory";
 import { foundAudioTools } from "../tools/foundaudio-tool";
 import { weatherTool } from "../tools/weather-tool";
-import { gmailTool } from "../tools/gmail-tool";
+import { gmailTools } from "../tools/gmail-tool";
 
 // Enhanced Memory Configuration
 const memory = new Memory({
@@ -56,6 +56,6 @@ export const foundAudioAgent = new Agent({
   If a tool requires authorization, you will receive an authorization URL.
   When that happens, clearly present this URL to the user and ask them to visit it to grant permissions.`,
   model: openai("gpt-4o-mini"),
-  tools: { ...foundAudioTools, weatherTool, ...gmailTool },
+  tools: { ...foundAudioTools, weatherTool, ...gmailTools },
   memory,
 });
