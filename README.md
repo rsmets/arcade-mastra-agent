@@ -14,6 +14,10 @@ This project serves as a technical assessment showcase, demonstrating:
 
 Leverage the custom Found Audio [toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) along with another Arcade [integration](https://docs.arcade.dev/toolkits) within a natural language interface that maintains memory. The aim was to have an agent that will suggest audio files to listen to based on the content of recently received emails.
 
+### Achieved
+
+Still having issues getting the Arcade toolkit to operate successfully as a Mastra tool. So the Found Audio agent can not interface with the Arcade toolkit. If it was functional then the agent could make Found Audio suggestions based on the weather. The aim of having the gmail inbox contents also steer the selection is a no-op with a separate [issue](https://github.com/rsmets/arcade-mastra-agent/issues/7).
+
 ## 🛠️ Tech Stack
 
 - **Runtime**: Node.js (>=20.9.0)
