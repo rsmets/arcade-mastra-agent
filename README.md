@@ -12,7 +12,9 @@ This project serves as a technical assessment showcase, demonstrating:
 
 ## Goal
 
-Leverage the custom Found Audio [toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) along with another Arcade [integration](https://docs.arcade.dev/toolkits) within a natural language interface that retains memory.
+<!-- trunk-ignore(markdownlint/MD013) -->
+
+Leverage the custom Found Audio [toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) along with another Arcade [integration](https://docs.arcade.dev/toolkits) within a natural language interface that maintains memory. The aim was to have an agent that will suggest audio files to listen to based on the content of recently received emails.
 
 ## 🛠️ Tech Stack
 
