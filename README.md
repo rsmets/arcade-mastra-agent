@@ -128,8 +128,4 @@ This repository demonstrates:
 
 ## Conclusion
 
-Unfortunately, I was unable to use Arcade.dev integrations with Mastra. I feel there maybe something wrong with the arcadeai/arcadejs [`toZodToolSet`](https://github.com/ArcadeAI/arcade-js/blob/main/src/lib/zod/zod.ts#L179) function however was not able to dig into that source fully. I have documented an [issue](https://github.com/rsmets/arcade-mastra-agent/issues/9) about this.
-
-I also was not able to use Arcade's OAuth gmail toolkit as noted in the filed [issue](https://github.com/rsmets/arcade-mastra-agent/issues/7).
-
-However, the project shows how one would use a Mastra agent with memory via their playground to interface with custom Arcade tools. If a little more time adding a Mastra workflow would have been trivial. If a had a lot more time, wrapping the Mastra agent in another web application would have interesting, so it can be used in a real application instead of the out of the box Mastra agent development playground web app.
+The project shows how one would use a Mastra agent with memory via their playground to interface with custom Arcade tools. If a little more time adding a Mastra workflow would have been trivial. If a had a lot more time, wrapping the Mastra agent in another web application (via AG-UI) would have been interesting; however, the out-of-the-box Mastra agent development playground web app does a decent job.
