@@ -49,8 +49,8 @@ const memory = new Memory({
   },
 });
 
-export const gmailAgent = new Agent({
-  name: "gmailAgent",
+export const inboxDJAgent = new Agent({
+  name: "inboxDJAgent",
   instructions: `You are a Gmail assistant that helps users manage their inbox and recommends foundaudio files based on the content of the most recent email received. If the email reads happy then recommend House music, if the email reads sad then recommend something else.
 
   You return the 'url' of the audio file when making suggestions.
