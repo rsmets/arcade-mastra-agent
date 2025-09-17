@@ -65,6 +65,7 @@ export const inboxDJAgent = new Agent({
   tools: { ...gmailTools, ...foundAudioTools },
   memory,
   scorers: {
+    // ref: https://mastra.ai/en/docs/scorers/overview#live-evaluations
     relevancy: {
       scorer: createAnswerRelevancyScorer({ model: openai("gpt-4o-mini") }),
       sampling: { type: "ratio", rate: 1 },
