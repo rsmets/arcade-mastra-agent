@@ -3,6 +3,7 @@ import { openai } from "@ai-sdk/openai";
 import { gmailTools } from "../tools/gmail-tool";
 import { LibSQLStore, LibSQLVector } from "@mastra/libsql";
 import { Memory } from "@mastra/memory";
+import { foundAudioTools } from "../tools/foundaudio-tool";
 
 // Enhanced Memory Configuration
 const memory = new Memory({
@@ -50,11 +51,13 @@ const memory = new Memory({
 
 export const gmailAgent = new Agent({
   name: "gmailAgent",
-  instructions: `You are a Google assistant that helps users manage their Google services (Gmail, Calendar, Sheets, Drive, and Contacts).
+  instructions: `You are a Gmail assistant that helps users manage their inbox and recommends foundaudio files based on the content of the most recent email received. If the email reads happy then recommend House music, if the email reads sad then recommend something else.
+
+  You return the 'url' of the audio file when making suggestions.
 
   If a tool requires authorization, you will receive an authorization URL.
   When that happens, clearly present this URL to the user and ask them to visit it to grant permissions.`,
   model: openai("gpt-4o-mini"),
-  tools: gmailTools,
+  tools: { ...gmailTools, ...foundAudioTools },
   memory,
 });
