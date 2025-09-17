@@ -4,6 +4,10 @@ import { gmailTools } from "../tools/gmail-tool";
 import { LibSQLStore, LibSQLVector } from "@mastra/libsql";
 import { Memory } from "@mastra/memory";
 import { foundAudioTools } from "../tools/foundaudio-tool";
+import {
+  createAnswerRelevancyScorer,
+  createToxicityScorer,
+} from "@mastra/evals/scorers/llm";
 
 // Enhanced Memory Configuration
 const memory = new Memory({
@@ -60,4 +64,15 @@ export const inboxDJAgent = new Agent({
   model: openai("gpt-4o-mini"),
   tools: { ...gmailTools, ...foundAudioTools },
   memory,
+  scorers: {
+    // ref: https://mastra.ai/en/docs/scorers/overview#live-evaluations
+    relevancy: {
+      scorer: createAnswerRelevancyScorer({ model: openai("gpt-4o-mini") }),
+      sampling: { type: "ratio", rate: 1 },
+    },
+    safety: {
+      scorer: createToxicityScorer({ model: openai("gpt-4o-mini") }),
+      sampling: { type: "ratio", rate: 1 },
+    },
+  },
 });
