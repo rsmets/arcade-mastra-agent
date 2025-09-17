@@ -12,11 +12,11 @@ This project serves as a technical assessment showcase, demonstrating:
 
 ## Goal
 
-Leverage the custom Found Audio [toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) along with another Arcade [integration](https://docs.arcade.dev/toolkits) within a natural language interface that maintains memory. The aim was to have an agent that will suggest audio files to listen to based on the content of recently received emails.
+Leverage the custom Found Audio [toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) along with another Arcade [integration](https://docs.arcade.dev/toolkits) within a natural language interface that maintains memory. The aim was to have an agent that suggests audio to listen to based on the content of recently received emails.
 
 ### Achieved
 
-Still having issues getting the Arcade toolkit to operate successfully as a Mastra tool. So the Found Audio agent can not interface with the Arcade toolkit. If it was functional then the agent could make Found Audio suggestions based on the weather. The aim of having the gmail inbox contents also steer the selection is a no-op with a separate [issue](https://github.com/rsmets/arcade-mastra-agent/issues/7).
+Happy to present an agent that uses the created FoundAudio [toolkit](https://github.com/rsmets/arcade-foundaudio-toolkit) paired with an existing Arcade Gmail [toolkit](https://docs.arcade.dev/toolkits/productivity/gmail). The `Inbox DJ Agent` can make audio file recommendations based on email contents.
 
 ## 🛠️ Tech Stack
 
@@ -128,4 +128,4 @@ This repository demonstrates:
 
 ## Conclusion
 
-The project shows how one would use a Mastra agent with memory via their playground to interface with custom Arcade tools. If a little more time adding a Mastra workflow would have been trivial. If a had a lot more time, wrapping the Mastra agent in another web application (via AG-UI) would have been interesting; however, the out-of-the-box Mastra agent development playground web app does a decent job.
+The project shows how one would use a Mastra agent with memory via their playground to interface with custom Arcade tools. If a little more time adding a Mastra workflow would have been trivial. If a had a lot more time, wrapping the Mastra agent in another web application (via AG-UI) would have been interesting; however, the out-of-the-box Mastra agent development playground web app does a decent job. Leveraging Mastra experimental [Scorers](https://mastra.ai/en/docs/scorers/overview) solution for evals was a fun addition.
